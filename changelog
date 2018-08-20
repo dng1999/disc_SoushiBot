@@ -1,0 +1,72 @@
+2.1.3
+- Added files:
+  > quotes.json
+- Removed config.json
+- Moved quote list from config.json to quotes.json
+
+2.1.2
+- Formatted console log for easier tracking
+- Functionality:
+  > Bot will now inform users if command is invalid
+
+2.1.1
+- Formatted output of !help
+- Functionality:
+  > Everytime any command is called, it is printed to the console
+
+2.1.0
+- Added commands:
+  > !help - Lists all commands and description
+- Added description to all command files
+
+2.0.0
+- Added files:
+  > cmd/
+- Added a command handler:
+  > Removed commands in bot.js
+  > Added commands as individual files in cmd/
+
+1.3.0
+- Added commands:
+  > !disconnect - Disconnect bot from Discord
+
+1.2.0
+- Optimized commands
+- Modified config.json:
+  > Added RoL quotes
+- Modified command !despair:
+  > Added argument: rol
+
+1.1.1
+- Fixed syntax in config.json
+- Modified command !despair:
+  > !despair and !despair da will be treated as the same command
+
+1.1.0
+- Modified config.json:
+  > Split quotes by series
+- Modified command !despair:
+  > Added 2 arguments: da, exodus
+
+1.0.0
+- Added commands:
+  > !despair - Random quote generator
+- Removed commands:
+  > !roll - Roll dice
+- Modified config.json to have list of quotes
+
+0.2.0
+- Added commands:
+  > !roll - Roll dice
+
+0.1.0
+- Added files:
+  > node_modules/
+  > bot.js
+  > config.json
+  > package-lock.json
+  > package.json
+- Added commands:
+  > !ping - Ping/Pong
+- Functionality:
+  > Log in
