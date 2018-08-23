@@ -1,19 +1,19 @@
-const config = require("../config.json");
+const qt = require("../quotes.json");
 
 exports.run = (client, message, args) => {
   //if no arg or da, will only pull da quotes
   if (args.length == 0 || args[0] === "da") {
-    var quotes = config.da
+    var quotes = qt.da
     console.log("\x1b[32m%s\x1b[0m","!despair (da) - " + message.author.username + " - " + message.createdAt);
   }
   //if rol, will pull da or rol quotes
   else if (args[0] === "rol") {
-    var quotes = config.da.concat(config.rol);
+    var quotes = qt.da.concat(qt.rol);
     console.log("\x1b[32m%s\x1b[0m","!despair rol - " + message.author.username + " - " + message.createdAt);
   }
   //if exodus, will pull da, rol, or exodus quotes
   else if (args[0] === "exodus") {
-    var quotes = config.da.concat(config.rol, config.exodus);
+    var quotes = qt.da.concat(qt.rol, qt.exodus);
     console.log("\x1b[32m%s\x1b[0m","!despair exodus - " + message.author.username + " - " + message.createdAt);
   }
   else {
